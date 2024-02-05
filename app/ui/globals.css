@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Teko&display=swap");
+
 :root {
   --bg: #151c2c;
   --bgSoft: #182237;
@@ -9,6 +11,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Teko", sans-serif;
+  font-size: 15px;
 }
 
 body {

@@ -9,6 +9,7 @@ import {
   MdPublic,
   MdSearch,
 } from "react-icons/md";
+import Search from "../search/search";
 
 const Navbar = () => {
   const path = usePathname().split("/").pop();
@@ -17,10 +18,7 @@ const Navbar = () => {
     <div className={styles.container}>
       <div className={styles.pageTitle}>{path}</div>
       <div className={styles.menuUI}>
-        <div className={styles.searchui}>
-          <MdSearch />
-          <input type="text" placeholder="Search.." className={styles.input} />
-        </div>
+        <Search placeholder={"Search..."} />
         <div className={styles.icons}>
           <MdOutlineChat size={20} />
           <MdNotifications size={20} />

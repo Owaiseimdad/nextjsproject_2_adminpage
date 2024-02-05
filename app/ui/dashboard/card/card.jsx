@@ -3,7 +3,7 @@ import styles from "./card.module.css";
 
 const Card = () => {
   const number = Math.floor(Math.random() * 1000 + 1);
-  const percent = Math.floor(Math.random() * 99 + 1);
+  const percent = Math.floor((number / 1000) * 100);
   return (
     <div className={styles.container}>
       <MdSupervisedUserCircle size={30} />

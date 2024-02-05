@@ -19,6 +19,7 @@ const Transactions = () => {
           <TableMenu />
           <TableMenu />
           <TableMenu />
+          <TableMenu />
         </tbody>
       </table>
     </div>
