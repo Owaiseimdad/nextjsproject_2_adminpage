@@ -1,7 +1,11 @@
-import React from "react";
+import SearchNav from "@/app/ui/dashboard/searchNav/searchNav";
 
 const ProductPage = () => {
-  return <div>ProductPage</div>;
+  return (
+    <div>
+      <SearchNav params={"Product"} button={false} />
+    </div>
+  );
 };
 
 export default ProductPage;

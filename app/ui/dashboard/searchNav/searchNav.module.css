@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  background-color: var(--bgSoft);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.topBar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.addnew {
+  padding: 5px;
+}
+
+.addnewBtn {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: lightblue;
+  cursor: pointer;
+}

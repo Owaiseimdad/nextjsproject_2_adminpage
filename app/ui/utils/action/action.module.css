@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  gap: 5px;
+}
+
+.button {
+  border: none;
+  padding: 1px;
+  border-radius: 2px;
+}
+
+.view {
+  background-color: lightgreen;
+}
+
+.delete {
+  background-color: lightcoral;
+}

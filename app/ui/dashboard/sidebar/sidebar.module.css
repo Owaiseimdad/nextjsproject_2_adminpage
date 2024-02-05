@@ -1,7 +1,8 @@
 .container {
   position: sticky;
   background-color: var(--bgSoft);
-  height: 100vh;
+  top: 20px;
+  margin-top: 20px;
 }
 
 .user {
@@ -54,4 +55,5 @@
 
 .logoutBtn:hover {
   background-color: var(--textSoft);
+  cursor: pointer;
 }
