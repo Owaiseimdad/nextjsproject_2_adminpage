@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--bgSoft);
+  width: 100%;
+  border-radius: 10px;
+}
+
+.usertext {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.usertext > span:nth-child(2),
+.usertext > span:nth-child(3) {
+  font-size: 13px;
+}
+
+.positive {
+  color: aquamarine;
+}
+
+.negative {
+  color: red;
+}

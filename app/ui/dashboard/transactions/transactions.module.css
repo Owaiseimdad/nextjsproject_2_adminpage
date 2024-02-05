@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bgSoft);
+  border-radius: 10px;
+  padding: 10px;
+  gap: 20px;
+}
+
+.tabletitle {
+  color: var(--textSoft);
+  font-size: 20px;
+}
+
+.transactionsTableHead {
+  margin-bottom: 20px;
+  justify-content: space-evenly;
+  padding: 5px;
+}
