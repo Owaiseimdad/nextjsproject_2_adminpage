@@ -9,7 +9,7 @@ const Users = () => {
     <div className={styles.container}>
       <SearchNav params={"User"} button={true} />
       <table className={styles.table}>
-        <thead>
+        <thead className={styles.tableHead}>
           <tr>
             <td>Name</td>
             <td>Email</td>
@@ -19,11 +19,16 @@ const Users = () => {
             <td>Action</td>
           </tr>
         </thead>
-        <tbody>
+        <tbody className={styles.tableBody}>
           <tr className={styles.userRow}>
             <td>
               <div className={styles.userData}>
-                <Image src="/noavatar.png" height={50} width={50} />
+                <Image
+                  className={styles.userProfilePic}
+                  src="/noavatar.png"
+                  height={40}
+                  width={40}
+                />
                 Owaise
               </div>
             </td>
@@ -40,7 +45,12 @@ const Users = () => {
           <tr className={styles.userRow}>
             <td>
               <div className={styles.userData}>
-                <Image src="/noavatar.png" height={50} width={50} />
+                <Image
+                  className={styles.userProfilePic}
+                  src="/noavatar.png"
+                  height={40}
+                  width={40}
+                />
                 Joe
               </div>
             </td>
