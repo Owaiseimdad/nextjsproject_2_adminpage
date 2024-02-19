@@ -14,6 +14,7 @@ import {
 } from "react-icons/md";
 import MenuLink from "./menuLink/menuLink";
 import Image from "next/image";
+import Link from "next/link";
 
 const menuItems = [
   {
@@ -104,10 +105,12 @@ const Sidebar = () => {
           </li>
         ))}
       </ul>
-      <button className={styles.logoutBtn}>
-        <MdLogout />
-        Logout
-      </button>
+      <Link href={`/login`} className={styles.addnew}>
+        <button className={styles.logoutBtn}>
+          <MdLogout />
+          Logout
+        </button>
+      </Link>
     </div>
   );
 };

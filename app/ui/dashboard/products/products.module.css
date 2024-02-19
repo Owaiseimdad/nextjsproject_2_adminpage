@@ -1,2 +1,21 @@
 .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.table {
+  padding: 20px;
+  background-color: var(--bgSoft);
+  border-radius: 10px;
+}
+
+.userData {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.userProfilePic {
+  border-radius: 50%;
 }

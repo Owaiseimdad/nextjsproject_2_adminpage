@@ -1,7 +1,12 @@
-const Homepage = () => {
-  return (
-    <div>Homepage</div>
-  )
-}
+import { Metadata } from "next";
 
-export default Homepage
+export const metadata = {
+  title: "Next Admin Dashboard",
+  description: "...",
+};
+
+const Homepage = () => {
+  return <div>Homepage</div>;
+};
+
+export default Homepage;
