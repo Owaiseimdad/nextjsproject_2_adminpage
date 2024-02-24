@@ -1,16 +1,12 @@
 "use client";
 
+import { addProduct } from "@/app/lib/actions";
 import styles from "../../../ui/dashboard/products/addProducts/addproducts.module.css";
 
 const AddProduct = () => {
   return (
     <div className={styles.container}>
-      <form
-        action={() => {
-          console.log("hello");
-        }}
-        className={styles.form}
-      >
+      <form action={addProduct} className={styles.form}>
         <input type="text" placeholder="title" name="title" required />
         <select name="cat" id="cat">
           <option value="general">Choose a Category</option>
