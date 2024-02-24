@@ -2,13 +2,15 @@ import Pagination from "@/app/ui/dashboard/pagination/pagination";
 import styles from "../../ui/dashboard/users/users.module.css";
 import SearchNav from "@/app/ui/dashboard/searchNav/searchNav";
 import Action from "@/app/ui/utils/action/action";
-import Randomyear from "@/app/ui/utils/randomYear/randomyear";
 import Image from "next/image";
 import { fetchUser } from "@/app/lib/data";
+import { deleteUser } from "@/app/lib/actions";
 
 const Users = async ({ searchParams }) => {
   const query = searchParams?.q || "";
-  const users = await fetchUser(query);
+  const page = searchParams?.page || 1;
+  const users = await fetchUser(query, page);
+
   return (
     <div className={styles.container}>
       <SearchNav params={"Users"} button={true} />
@@ -24,7 +26,7 @@ const Users = async ({ searchParams }) => {
           </tr>
         </thead>
         <tbody className={styles.tableBody}>
-          {users?.map((e) => {
+          {users[0]?.map((e) => {
             return (
               <tr className={styles.userRow}>
                 <td>
@@ -43,7 +45,7 @@ const Users = async ({ searchParams }) => {
                 <td>{(e.isAdmin && "Admin") || "User"}</td>
                 <td>{e.isActive && "Active"}</td>
                 <td>
-                  <Action userId={e.id} />
+                  <Action userId={e.id} actionFunction={deleteUser} />
                 </td>
               </tr>
             );
@@ -51,7 +53,7 @@ const Users = async ({ searchParams }) => {
         </tbody>
       </table>
       <div className={styles.paginationType}>
-        <Pagination />
+        <Pagination count={users[1]} />
       </div>
     </div>
   );

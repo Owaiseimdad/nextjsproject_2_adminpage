@@ -9,6 +9,7 @@ const Search = ({ placeholder }) => {
 
   const searchText = (event) => {
     const params = new URLSearchParams(searchParams);
+    params.set("page", 1);
     if (event.target.value) {
       params.set("q", event.target.value);
     } else {
